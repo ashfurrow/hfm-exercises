@@ -1,0 +1,30 @@
+-- Haskell Playground 1.0
+
+sort2 4 3
+sort2' 4 3
+
+(1,2) == (1,2)
+--almostEqual (1,2) (2,1)
+
+fst (1,2)
+snd (1,2)
+thrd (1,2,3)
+
+
+
+[1..3]
+
+isLower 'a'
+
+isLower 'B'
+isLower '?'
+
+
+mangle "Hello"
+mangle "I"
+mangle ""   
+
+
+divide 15 5
+divide 100 6
+divide 5 10

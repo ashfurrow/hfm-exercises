@@ -1,0 +1,13 @@
+-- Haskell Playground 1.0
+'a'
+"b"
+
+inc (square 5)
+square (inc 5)
+average (inc 3) (inc 5)
+
+
+
+showResult 3
+
+showAreaOfCircle 12.3

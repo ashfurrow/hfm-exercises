@@ -1,4 +1,5 @@
-import Data.Char 
+import Data.Char
+import Prelude hiding (length, enumFromTo)
 
 natSum :: (Num a, Ord a, Show a) => a -> a
 natSum 0 = 0
@@ -61,10 +62,32 @@ fastReverse xs = reverseAcc [] xs
     reverseAcc accList []     = accList
     reverseAcc accList (x:xs) = reverseAcc (x : accList) xs
 
+-- Exercises
+length :: [a] -> Int
+length [] = 0
+length (x:xs) = 1 + length xs
 
 
+fact :: Int -> Int
+fact n | n < 1 = error "Can't call on argument < 1"
+fact 1 = 1
+fact n = n * fact (n-1)
 
 
+enumFromTo :: Int -> Int -> [Int]
+enumFromTo m n = enumFromToAcc [] m n
+  where
+    enumFromToAcc :: [Int] -> Int -> Int -> [Int]
+    enumFromToAcc acc m n
+      | m == n = (m : acc)
+      | otherwise = m : (enumFromToAcc acc (m + 1) n)
+
+
+removeOdd :: [Int] -> [Int]
+removeOdd [] = []
+removeOdd (x:xs)
+  | odd x = removeOdd xs
+  | otherwise = x : (removeOdd xs)
 
 
 

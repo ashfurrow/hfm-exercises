@@ -22,5 +22,17 @@ reverse' "Hello"
 
 stringToInt "123"
 
-
 fastReverse "Hello"
+
+-- Exercises
+
+length "Hello"
+
+fact 4
+
+enumFromTo 1 5
+
+
+removeOdd [1, 4, 5, 7, 10]
+removeOdd [0..15]
+

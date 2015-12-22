@@ -1,0 +1,26 @@
+-- Haskell Playground 1.0
+
+natSum 4
+
+repeatN 4 4
+repeatN 0 4
+repeatN 100 4
+
+suffixes "Hello"
+
+
+
+
+allSquares [1..5]
+
+
+
+extractDigits "das43 dffe 23 5 def45"
+extractDigits' "das43 dffe 23 5 def45"
+
+reverse' "Hello"
+
+stringToInt "123"
+
+
+fastReverse "Hello"

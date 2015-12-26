@@ -24,11 +24,14 @@ let j = (0 <)
 j 5
 j (-5)
 
+
+-- Exercises
 sum (enumFromTo 1 5)
 natSum 5
 
-
-
-
--- 
+--3: Applies cons operator to each of [1..5] with an initial accumulator of []
 foldr (:) [] [1..5]
+
+map  (\x -> x * x) [1..5]
+
+map1 (\x -> x * x) [1..5]

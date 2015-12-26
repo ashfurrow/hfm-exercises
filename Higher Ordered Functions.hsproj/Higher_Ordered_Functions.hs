@@ -1,4 +1,4 @@
-import Prelude hiding (map, zipWith, filter, foldr, foldl, sum)
+import Prelude hiding (map, zipWith, filter, foldr, foldl, sum, map)
 import Data.Char
 
 average :: Float -> Float -> Float
@@ -58,10 +58,15 @@ sumOfSquareRoots = sum . map sqrt . filter (> 0)
 
 -- Exercises
 
+-- 1
 natSum = sum . enumFromTo 1
 
---map1 :: (a -> b) -> [a] -> [b]
---map1 f = foldr f 
+
+-- 2
+map1 :: (a -> b) -> [a] -> [b]
+map1 f = foldr (\a b -> (f a) : b) []
+
+-- 4&5 Skipping lol
 
 
 

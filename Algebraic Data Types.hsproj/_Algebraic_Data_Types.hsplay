@@ -1,0 +1,29 @@
+-- Haskell Playground 1.0
+
+isWeekday Monday
+isWeekday Saturday
+
+zeroPoint
+Point 1 2 
+
+movePointN 5 (Vector 1 3) (Point 0 0)
+
+
+map (*)   [1..4]
+
+
+
+let allSquares = (\ x -> x*x)
+
+map  allSquares [1..4]
+map1 allSquares [1..4]
+
+map2 allSquares [1..4]
+
+
+map nextDay [Sunday .. Saturday]
+
+
+let hand = [(Card 2 Spades), (FaceCard Jack Hearts)]
+
+handValue hand
